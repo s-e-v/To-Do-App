@@ -3,3 +3,8 @@
     margin: auto;
     border: 2px solid royalblue;
 }
+
+.final {
+    color: rgb(249, 88, 0);
+    text-decoration: line-through;
+}

@@ -1,4 +1,11 @@
 $("li").click(function () { 
-    $(this).css("color","blue");
-    $(this).css("text-decoration","line-through");
+    $(this).toggleClass("final");
 });
+
+
+$("span").click(function(){
+    $(this).parent().fadeOut(500,function(){
+        $(this).remove();
+    });
+    event.stopPropagation();
+})
