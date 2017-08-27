@@ -1,3 +1,8 @@
+$(document).ready(function () {
+    name = prompt("What's your name?");
+    $("h1").text(name + "'s To-Do App");
+});
+
 $("ul").on("click", "li", function () { 
     $(this).toggleClass("final");
 });
