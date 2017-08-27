@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" manifest="app.appcache">
 
 <head>
     <meta charset="UTF-8">
@@ -16,12 +16,14 @@
     <div id="body">
     <div id="container">
         <h1>...</h1>
+        <div id="head">
         <input type="text" name="toDo" placeholder="New To-Do..">
         <input type="button" value="List It" id="button">
+        </div>
         <ul>
-            <li>Pizza <span>X</span></li>
-            <li>Buy Coke <span>X</span></li>
-            <li>Cinema at 4 PM <span>X</span></li>
+            <li>Pizza <span><i class="fa fa-minus-circle"></i></span></li>
+            <li>Buy Coke <span><i class="fa fa-minus-circle"></i></span></li>
+            <li>Cinema at 4 PM <span><i class="fa fa-minus-circle"></i></span></li>
         </ul>
     </div>
     </div>

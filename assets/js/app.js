@@ -18,12 +18,16 @@ $("input[type='text']").keypress(function(event) {
     if(event.which === 13){
         var text = $(this).val();
         $(this).val("");
-        $("ul").append("<li>"+text+" <span>X</span></li>");
+        $("ul").append("<li>"+text+" <span><i class='fa fa-minus-circle'></i></span></li>");
     };
 });
 
 $("#button").click(function () {
     var text = $("input[type='text']").val();
     $("input[type='text']").val("");
-    $("ul").append("<li>"+text+" <span>X</span></li>");
+    $("ul").append("<li>"+text+"  <span><i class='fa fa-minus-circle'></i></span></li>");
+});
+
+$("i").click(function(){
+    $("#head").fadeToggle();
 });

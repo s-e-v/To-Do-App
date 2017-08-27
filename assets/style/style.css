@@ -81,3 +81,21 @@ input[type="button"] {
     border: none;
     color: white;
 }
+
+span {
+    background: black;
+    color: white;
+    height: 40px;
+    text-align: center;
+    width: 0;
+    display: inline-block;
+    font-size: 24px;
+    transition: 0.1s linear;
+    opacity: 0;
+    float: right;
+}
+
+li:hover span {
+    width: 40px;
+    opacity: 1;
+}
