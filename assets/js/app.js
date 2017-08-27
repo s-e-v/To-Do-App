@@ -1,6 +1,6 @@
 $(document).ready(function () {
     name = prompt("What's your name?");
-    $("h1").text(name + "'s To-Do App");
+    $("h1").html("<i class='fa fa-bars'></i> " + name + "'s To-Do App");
 });
 
 $("ul").on("click", "li", function () { 
