@@ -28,6 +28,6 @@ $("#button").click(function () {
     $("ul").append("<li>"+text+"  <span><i class='fa fa-minus-circle'></i></span></li>");
 });
 
-$("i").click(function(){
+$(document).on("click", ".fa-bars",function(){
     $("#head").fadeToggle();
 });
